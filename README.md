@@ -18,6 +18,13 @@ C simulations using QuEST for larger/faster statevector experiments:
 
 - **Quantum teleportation** (`teleport.c`, `teleportacija_real.c`) — transmits a qubit's state using entanglement and classical communication, verified over repeated runs
 - **Quantum Zeno effect** (`zeno.c`, `zeno_efffect_KS.c`, `zeno_effect_nan_KS.c`, `no_zeno.c`) — simulates how frequent measurement suppresses the evolution of a quantum state, comparing measured vs. unmeasured trajectories
+- **Bell states** (`bell_state_1st.c`, `bell_state_4th.c`) — prepares two of the four maximally-entangled Bell states via Hadamard + CNOT and verifies the expected 50/50 correlated measurement statistics over 10,000 runs
+- **Deutsch–Jozsa** (`deutsch_josza.c`, `deutsch_josza_oracle.c`) — a QuEST/C implementation of the same algorithm as the Qiskit notebook above, for comparing the two toolchains
+- **Quantum Fourier Transform** (`qft.cpp`) — QuEST/C++ implementation of the QFT, complementing the Qiskit version
+
+## Cluster (`cluster/`)
+
+`qft.slurm` — SLURM batch script for running the Qiskit QFT circuit on a shared HPC cluster partition.
 
 ## Running
 
